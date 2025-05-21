@@ -1,3 +1,62 @@
+Key Features
+
+Sprint Board Management
+
+Create boards for each sprint with name and date range
+Navigate between different sprint boards
+
+
+Feedback Collection
+
+Team members can submit feedback with their name and feedback type
+Categories include "What went well", "What could be improved", and "Action items"
+
+
+Sentiment Analysis
+
+Each feedback item is analyzed using TextBlob to determine sentiment polarity
+Feedback is categorized as Positive, Neutral, or Negative
+Visual indicators (color-coding) show sentiment at a glance
+
+
+Dashboard & Analytics
+
+Overall sentiment score for the sprint
+Breakdown of sentiment categories
+Sentiment analysis by feedback type
+Highlights of most positive and negative feedback
+Custom suggestions based on overall sentiment
+
+
+Export Functionality
+
+Export all feedback and sentiment data as CSV for further analysis
+
+
+
+Technical Implementation
+
+Streamlit: For the interactive web interface
+Pandas: For data handling and analysis
+TextBlob: For natural language processing and sentiment analysis
+UUID: For generating unique IDs for boards and feedback items
+
+Running the Application
+
+Make sure you have the required libraries installed:
+
+pip install streamlit pandas textblob
+
+Save the code to a file (e.g., retro_app.py)
+Run the application:
+
+streamlit run retro_app.py
+
+
+
+
+
+
 Sentiment Analysis App
 import streamlit as st
 import pandas as pd
